@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.filmUI">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="426dp"
+        android:layout_height="734dp"
+        android:layout_marginStart="1dp"
+        android:background="#0B0A0A"
+        android:contentDescription="@string/scrollview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="385dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="41dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_circle_dark"
+                    android:padding="6dp"
+                    android:src="@drawable/fav"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.958"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/backimg"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_circle_dark"
+                    android:padding="6dp"
+                    android:src="@drawable/back"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView12"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="422dp"
+                android:layout_height="566dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.058"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="479dp"
+                    android:layout_height="347dp"
+                    android:background="@drawable/bg_shadow"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/movieName"
+                        android:layout_width="388dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="162dp"
+                        android:layout_marginEnd="191dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Title"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.451"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="363dp"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginEnd="53dp"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <TextView
+                            android:id="@+id/rating"
+                            android:layout_width="123dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableStart="@drawable/star"
+                            android:gravity="center_vertical"
+                            android:text=" 0"
+                            android:textColor="#FFD700" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableStart="@android:drawable/presence_away"
+                            android:text="00:00"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="113dp"
+                            android:layout_height="21dp"
+                            android:layout_weight="1"
+                            android:drawableStart="@android:drawable/ic_menu_my_calendar"
+                            android:text="00/00/00"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/smallimg"
+                        android:layout_width="1dp"
+                        android:layout_height="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.513"
+                        app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/bigimg"
+                        android:layout_width="438dp"
+                        android:layout_height="231dp"
+                        android:layout_marginBottom="64dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.609"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/text25"
+                    android:layout_width="373dp"
+                    android:layout_height="84dp"
+
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="7dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Summary"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.961"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <TextView
+                    android:id="@+id/text24"
+                    android:layout_width="371dp"
+                    android:layout_height="37dp"
+
+                    android:text="Actors"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@+id/imgrecycler"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.844"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Synopsis"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/Synopsis"
+                    android:layout_width="354dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="44dp"
+                    android:drawableStart="@drawable/btn_4"
+                    android:text="     Actors"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/imgrecycler"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/imgrecycler"
+                    android:layout_width="401dp"
+                    android:layout_height="151dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="337dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="28dp"
+                    android:drawableStart="@android:drawable/ic_dialog_info"
+                    android:text="   Summary"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.609"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

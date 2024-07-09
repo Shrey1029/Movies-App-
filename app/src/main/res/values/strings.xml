@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">movieAPP</string>
+    <string name="background">background</string>
+    <string name="circle">circle</string>
+    <string name="woman">woman</string>
+    <string name="watch">watch</string>
+    <string name="offline">offline</string>
+    <string name="floating_button">floating button</string>
+    <string name="scrollview">scroll</string>
+</resources>
